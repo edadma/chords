@@ -1,10 +1,10 @@
-name := "-sn-template"
+name := "chords"
 
 version := "0.0.1"
 
 versionScheme := Some("early-semver")
 
-scalaVersion := "3.2.1"
+scalaVersion := "3.2.2"
 
 enablePlugins(ScalaNativePlugin)
 
@@ -39,8 +39,9 @@ homepage := Some(url("https://github.com/edadma/" + name.value))
 
 //libraryDependencies += "org.scalatest" %%% "scalatest" % "3.2.13" % "test"
 
-//libraryDependencies ++= Seq(
-//)
+libraryDependencies ++= Seq(
+  "io.github.edadma" %%% "libcairo" % "0.1.6",
+)
 
 publishMavenStyle := true
 
